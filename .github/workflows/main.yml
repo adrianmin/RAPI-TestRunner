@@ -19,13 +19,13 @@ env:
 jobs:
   Run-Tests:
     # The type of runner that the job will run on
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     steps:
       # checkout branch
       - uses: actions/checkout@v1
       
       - name: Download ReadyAPI
-        run: curl https://dl.eviware.com/ready-api/3.40.1.0/ReadyAPI-x64-3.40.1.exe -o ~/ReadyAPI-x64-3.40.1.exe
+        run: curl https://dl.eviware.com/ready-api/3.40.1.0/ReadyAPI-x64-3.40.1.sh -o ~/ReadyAPI-x64-3.40.1.exe
         
       - name: Install ReadyAPI
         run: start /wait ReadyAPI-x64-3.40.1.exe -c
