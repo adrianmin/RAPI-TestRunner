@@ -28,7 +28,7 @@ jobs:
         run: curl https://dl.eviware.com/ready-api/3.40.1.0/ReadyAPI-x64-3.40.1.sh -o ~/ReadyAPI-x64-3.40.1.exe
         
       - name: Install ReadyAPI
-        run: start /wait ReadyAPI-x64-3.40.1.exe -c
+        run: ./ReadyAPI-x64-3.53.0.sh -c
 
       - name: Run ReadyAPI Tests
         # navigate to the ReadyAPI Installation bin folder
