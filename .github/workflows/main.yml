@@ -38,7 +38,7 @@ jobs:
       - name: Install ReadyAPI
         run: |
           cd ~/Download
-          ReadyAPI-x64-3.40.1.sh -c
+          /ReadyAPI-x64-3.40.1.sh -c
     
         # execute the ReadyAPI project stored in repository
         #run: cmd /c "testrunner.bat -r -a -j -f${WORKSPACE} "-RJUnit-Style HTML Report" -FXML -accessKey "9db1afca-70a8-40f4-9611-317f7d3b689f" "-EDefault environment" ${{ env.RAPI_PROJECT_PATH }}"
