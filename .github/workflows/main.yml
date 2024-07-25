@@ -24,6 +24,9 @@ jobs:
       - name: Download ReadyAPI installer
         run: curl https://dl.eviware.com/ready-api/3.40.1.0/ReadyAPI-x64-3.40.1.exe -o ~/ReadyAPI-x64-3.40.1.exe
 
+      - name: List directory contents recursively on Ubuntu
+        run: ls -R
+
     #  run: echo ReadyAPI Downloaded Successfully
 
       - name: Make installer executable
