@@ -36,7 +36,7 @@ jobs:
         run: chmod +x ~/Downloads/ReadyAPI-x64-3.40.1.sh
 
       - name: Install ReadyAPI
-        run: 
+        run: |
           cd ~/Download
           ./ReadyAPI-x64-3.40.1.sh -c
       
