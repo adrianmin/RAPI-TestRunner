@@ -37,7 +37,7 @@ jobs:
 
       - name: Install ReadyAPI
         run: |
-          cd ~/Download
+          cd Download
           /ReadyAPI-x64-3.40.1.sh -c
     
         # execute the ReadyAPI project stored in repository
