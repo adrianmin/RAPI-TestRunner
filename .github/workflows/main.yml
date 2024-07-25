@@ -22,7 +22,7 @@ jobs:
       - uses: actions/checkout@v1
       
       - name: Download ReadyAPI installer
-        run: curl https://dl.eviware.com/ready-api/3.40.1.0/ReadyAPI-x64-3.40.1.exe -o ~/ReadyAPI-x64-3.40.1.exe
+        run: curl https://dl.eviware.com/ready-api/3.40.1.0/ReadyAPI-x64-3.40.1.sh -o ~/ReadyAPI-x64-3.40.1.sh
 
       - name: List directory contents recursively on Ubuntu
         run: ls -la ~/
