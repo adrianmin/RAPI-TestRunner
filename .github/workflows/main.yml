@@ -22,7 +22,9 @@ jobs:
       - uses: actions/checkout@v1
       
       - name: Download ReadyAPI installer
-        run: curl https://dl.eviware.com/ready-api/3.54.0/ReadyAPI-x64-3.54.0.sh -o ~/Downloads/ReadyAPI-x64-3.54.0.sh
+        run: curl https://dl.eviware.com/ready-api/3.40.1.0/ReadyAPI-x64-3.40.1.exe -o ~/ReadyAPI-x64-3.40.1.exe
+
+    #  run: echo ReadyAPI Downloaded Successfully
 
       - name: Make installer executable
         run: chmod +x ~/Downloads/ReadyAPI-x64-3.54.0.sh
