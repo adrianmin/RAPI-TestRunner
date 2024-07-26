@@ -40,11 +40,11 @@ jobs:
 
       - name: Check if shell script is executable
         run: |
-         run: |
-          DIRECTORY_PATH="~/Downloads"
 
-          if [ -x "$DIRECTORY_PATH" ]; then
-            echo "Directory $DIRECTORY_PATH exists."
+         DIRECTORY_PATH="~/Downloads"
+
+         if [ -x "$DIRECTORY_PATH" ]; then
+          echo "Directory $DIRECTORY_PATH exists."
           else
             echo "Directory $DIRECTORY_PATH does not exist."
             exit 1
