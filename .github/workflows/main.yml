@@ -38,6 +38,18 @@ jobs:
       - name: Make installer executable
         run: chmod +x ~/Downloads/ReadyAPI-x64-3.40.1.sh
 
+      - name: Check if shell script is executable
+        run: |
+         run: |
+          DIRECTORY_PATH="~/Downloads"
+
+          if [ -x "$DIRECTORY_PATH" ]; then
+            echo "Directory $DIRECTORY_PATH exists."
+          else
+            echo "Directory $DIRECTORY_PATH does not exist."
+            exit 1
+          fi
+
       - name: Install ReadyAPI
         run: ./Downloads/ReadyAPI-x64-3.40.1.sh -c
     
