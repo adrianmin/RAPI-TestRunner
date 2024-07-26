@@ -30,7 +30,8 @@ jobs:
         run: curl https://dl.eviware.com/ready-api/3.40.1.0/ReadyAPI-x64-3.40.1.sh -o ~/Downloads/ReadyAPI-x64-3.40.1.sh
 
       - name: List directory contents recursively on Ubuntu
-        run: ls -la ~/
+        run: |
+         ls -la ~/Downloads
 
     #  run: echo ReadyAPI Downloaded Successfully
 
