@@ -41,7 +41,7 @@ jobs:
       - name: Check if shell script is executable
         run: |
          cd ./ 
-         ReadyAPI-x64-3.40.1.sh -c
+         -c ReadyAPI-x64-3.40.1.sh
 
         
 
