@@ -21,25 +21,25 @@ jobs:
       # checkout branch
       - uses: actions/checkout@v1
 
-      - name: create downloads folder
-        run: |
-         mkdir -p ~/Downloads
+     # - name: create downloads folder
+       # run: |
+        # mkdir -p ~/Downloads
          
       
       - name: Download ReadyAPI installer
-        run: curl https://dl.eviware.com/ready-api/3.40.1.0/ReadyAPI-x64-3.40.1.sh -o ~/Downloads/ReadyAPI-x64-3.40.1.sh
+        run: curl https://dl.eviware.com/ready-api/3.40.1.0/ReadyAPI-x64-3.40.1.sh -o ~/ReadyAPI-x64-3.40.1.sh
 
       - name: List directory contents recursively on Ubuntu
         run: |
-         ls -la ~/Downloads
+         ls -la ~/
 
     #  run: echo ReadyAPI Downloaded Successfully
 
       - name: Make installer executable
-        run: chmod +x ~/Downloads/ReadyAPI-x64-3.40.1.sh
+        run: chmod +x ~/ReadyAPI-x64-3.40.1.sh
 
       - name: Check if shell script is executable
-        run: Downloads/ReadyAPI-x64-3.40.1.sh -c
+        run: ./ReadyAPI-x64-3.40.1.sh -c
 
         
 
