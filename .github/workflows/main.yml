@@ -39,7 +39,7 @@ jobs:
         run: chmod +x ~/Downloads/ReadyAPI-x64-3.40.1.sh
 
       - name: Check if shell script is executable
-        run: ~/Downloads/ReadyAPI-x64-3.40.1.sh -c
+        run: Downloads/ReadyAPI-x64-3.40.1.sh -c
 
         
 
