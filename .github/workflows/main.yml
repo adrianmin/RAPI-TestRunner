@@ -27,7 +27,7 @@ jobs:
          
       
       - name: Download ReadyAPI installer
-        run: curl https://dl.eviware.com/ready-api/3.40.1.0/ReadyAPI-x64-3.40.1.sh -o ~/ReadyAPI-x64-3.40.1.sh
+        run: curl https://dl.eviware.com/ready-api/3.40.1.0/ReadyAPI-x64-3.54.0.sh -o ~/ReadyAPI-x64-3.54.0.sh
 
       - name: List directory contents recursively on Ubuntu
         run: |
@@ -36,10 +36,10 @@ jobs:
     #  run: echo ReadyAPI Downloaded Successfully
 
       - name: Make installer executable
-        run: chmod +x ~/ReadyAPI-x64-3.40.1.sh
+        run: chmod +x ~/ReadyAPI-x64-3.54.0.sh
 
       - name: Check if shell script is executable
-        run: sudo sh ./ReadyAPI-x64-3.40.1.sh -c
+        run: ./ReadyAPI-x64-3.54.0.sh -q
 
         
 
